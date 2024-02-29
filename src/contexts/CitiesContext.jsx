@@ -17,7 +17,7 @@ function CitiesProvider({ children }) {
         const data = await res.json();
         setCities(data);
       } catch (err) {
-        alert("There was an error loading data");
+        console.log("There was an error loading data");
       } finally {
         setIsLoading(false);
       }
@@ -32,7 +32,7 @@ function CitiesProvider({ children }) {
       const data = await res.json();
       setCurrentyCity(data);
     } catch (err) {
-      alert("There was an error loading data");
+      console.log("There was an error loading data");
     } finally {
       setIsLoading(false);
     }
